@@ -1,0 +1,124 @@
+{
+  "hash": "e577220b",
+  "configHash": "f5e1621a",
+  "lockfileHash": "555c28b9",
+  "browserHash": "65925dd4",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "721f3882",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "0f36d363",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "4bee8114",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "eea56291",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "951b9187",
+      "needsInterop": false
+    },
+    "rxdb/plugins/core": {
+      "src": "../../../../../../node_modules/rxdb/dist/esm/index.js",
+      "file": "rxdb_plugins_core.js",
+      "fileHash": "c9997e97",
+      "needsInterop": false
+    },
+    "rxdb/plugins/dev-mode": {
+      "src": "../../../../../../node_modules/rxdb/dist/esm/plugins/dev-mode/index.js",
+      "file": "rxdb_plugins_dev-mode.js",
+      "fileHash": "576ae795",
+      "needsInterop": false
+    },
+    "rxdb/plugins/replication-webrtc": {
+      "src": "../../../../../../node_modules/rxdb/dist/esm/plugins/replication-webrtc/index.js",
+      "file": "rxdb_plugins_replication-webrtc.js",
+      "fileHash": "86adcefb",
+      "needsInterop": false
+    },
+    "rxdb/plugins/storage-dexie": {
+      "src": "../../../../../../node_modules/rxdb/dist/esm/plugins/storage-dexie/index.js",
+      "file": "rxdb_plugins_storage-dexie.js",
+      "fileHash": "b8abfab8",
+      "needsInterop": false
+    },
+    "rxdb/plugins/validate-ajv": {
+      "src": "../../../../../../node_modules/rxdb/dist/esm/plugins/validate-ajv/index.js",
+      "file": "rxdb_plugins_validate-ajv.js",
+      "fileHash": "32f9060c",
+      "needsInterop": false
+    },
+    "rxjs": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/index.js",
+      "file": "rxjs.js",
+      "fileHash": "0345e6d1",
+      "needsInterop": false
+    },
+    "rxjs/operators": {
+      "src": "../../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
+      "file": "rxjs_operators.js",
+      "fileHash": "089fd0b9",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "browser-N7BKKSXK": {
+      "file": "browser-N7BKKSXK.js"
+    },
+    "chunk-53GFLZPR": {
+      "file": "chunk-53GFLZPR.js"
+    },
+    "chunk-GTR5A7FW": {
+      "file": "chunk-GTR5A7FW.js"
+    },
+    "chunk-FNIUW45R": {
+      "file": "chunk-FNIUW45R.js"
+    },
+    "chunk-A2OH43BR": {
+      "file": "chunk-A2OH43BR.js"
+    },
+    "chunk-REWEYEVE": {
+      "file": "chunk-REWEYEVE.js"
+    },
+    "chunk-OTB4SRCL": {
+      "file": "chunk-OTB4SRCL.js"
+    },
+    "chunk-LK43A4VV": {
+      "file": "chunk-LK43A4VV.js"
+    },
+    "chunk-FKGUJVD6": {
+      "file": "chunk-FKGUJVD6.js"
+    },
+    "chunk-GXT3KPMX": {
+      "file": "chunk-GXT3KPMX.js"
+    },
+    "chunk-AUREPRPG": {
+      "file": "chunk-AUREPRPG.js"
+    },
+    "chunk-WCYHURJF": {
+      "file": "chunk-WCYHURJF.js"
+    },
+    "chunk-3TXA6K3X": {
+      "file": "chunk-3TXA6K3X.js"
+    },
+    "chunk-7RSYZEEK": {
+      "file": "chunk-7RSYZEEK.js"
+    }
+  }
+}

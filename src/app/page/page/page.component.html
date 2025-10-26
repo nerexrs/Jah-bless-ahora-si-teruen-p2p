@@ -1,0 +1,89 @@
+<section class="opfs-section">
+  <div class="container">
+    <h1 class="main-title">Jah Bless - Sistema de Archivos & Pomodoro P2P</h1>
+
+    <!-- OPFS Section -->
+    <div class="card opfs-card">
+      <h2 class="card-title">💾 Origin Private File System (OPFS)</h2>
+      <div class="input-group">
+        <input
+          type="text"
+          [(ngModel)]="textInput"
+          placeholder="Escribe algo para guardar..."
+          class="text-input"
+        >
+        <button (click)="onButtonClick()" class="btn btn-primary">💾 Guardar</button>
+      </div>
+      <div class="result-display" *ngIf="message">
+        <p class="result-text">{{ message }}</p>
+      </div>
+      <button (click)="onReadClick()" class="btn btn-secondary">📖 Leer Contenido</button>
+      <div class="result-display" *ngIf="readMessage">
+        <p class="result-text">{{ readMessage }}</p>
+      </div>
+    </div>
+
+    <!-- File System Section -->
+    <div class="card fs-card">
+      <h2 class="card-title">📁 File System Access API</h2>
+      <div class="button-group">
+        <button (click)="activarFS()" class="btn btn-success" [disabled]="fileSystemActivated">
+          {{ fileSystemActivated ? '✅ Activado' : '🔓 Activar File System' }}
+        </button>
+        <button (click)="guardarEjemplo()" class="btn btn-primary" [disabled]="!fileSystemActivated">
+          💾 Guardar Ejemplo
+        </button>
+        <button (click)="listarFiles()" class="btn btn-info" [disabled]="!fileSystemActivated">
+          📋 Listar Archivos
+        </button>
+      </div>
+
+      <!-- File List -->
+      <div *ngIf="archivosList.length > 0" class="file-list-container">
+        <h3 class="section-title">📂 Archivos en el directorio:</h3>
+        <div class="file-grid">
+          <button
+            *ngFor="let archivo of archivosList"
+            (click)="leerArchivoFS(archivo)"
+            class="file-button"
+          >
+            📄 {{ archivo }}
+          </button>
+        </div>
+      </div>
+
+      <!-- File Content -->
+      <div *ngIf="selectedFileContent" class="file-content-display">
+        <h4 class="content-title">📖 Contenido del archivo:</h4>
+        <div class="content-box">
+          <pre class="content-text">{{ selectedFileContent }}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-todo-p2p></app-todo-p2p>
+
+<!-- Sección Pomodoro P2P -->
+<div class="pomodoro-section">
+  <div class="container">
+    <h2 class="section-title">🍅 Pomodoro P2P Timer</h2>
+
+    <!-- Floating Buttons -->
+    <app-settings-floating-button></app-settings-floating-button>
+
+    <!-- Main Content -->
+    <div class="main-content" style="margin-top: 3.4375rem;">
+      <app-clock></app-clock>
+      <app-session-log></app-session-log>
+    </div>
+
+    <!-- Floating Action Button -->
+    <app-floating-button></app-floating-button>
+
+    <!-- Router Outlet for modals -->
+    <router-outlet />
+  </div>
+</div>
+

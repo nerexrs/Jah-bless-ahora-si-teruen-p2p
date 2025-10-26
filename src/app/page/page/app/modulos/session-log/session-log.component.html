@@ -1,0 +1,24 @@
+<div class="session-log-container" style="margin-top: 10px;">
+  <h3>Historial</h3>
+  <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Tarea</th>
+          <th>Inicio</th>
+          <th>Fin</th>
+          <th>Tiempo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let p of pomodoros$ | async" [ngClass]="{'pomodoro-row': true, 'clickable-row': true}" (click)="openModal(p)">
+          <td>{{ p.task }}</td>
+          <td>{{ p.startTime }}</td>
+          <td>{{ p.endTime }}</td>
+          <td>{{ p.duration | formatTime }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-pomodoro-modal [pomodoro]="selectedPomodoro" [isVisible]="modalVisible" (close)="closeModal()"></app-pomodoro-modal>

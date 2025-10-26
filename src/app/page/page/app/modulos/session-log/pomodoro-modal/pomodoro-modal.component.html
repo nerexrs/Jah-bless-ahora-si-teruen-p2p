@@ -1,0 +1,25 @@
+<div class="modal-overlay" *ngIf="isVisible" (click)="closeModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <div class="modal-header">
+      <h2>Detalles del Pomodoro</h2>
+      <button class="close-btn" (click)="closeModal()">&times;</button>
+    </div>
+    <div class="modal-body" *ngIf="pomodoro">
+      <div class="detail-item">
+        <strong>Tarea:</strong> {{ pomodoro.task }}
+      </div>
+      <div class="detail-item">
+        <strong>Inicio:</strong> {{ pomodoro.startTime }}
+      </div>
+      <div class="detail-item">
+        <strong>Fin:</strong> {{ pomodoro.endTime }}
+      </div>
+      <div class="detail-item">
+        <strong>Duración:</strong> {{ pomodoro.duration | formatTime }}
+      </div>
+      <div class="detail-item" *ngIf="pomodoro.description">
+        <strong>Descripción:</strong> {{ pomodoro.description }}
+      </div>
+    </div>
+  </div>
+</div>

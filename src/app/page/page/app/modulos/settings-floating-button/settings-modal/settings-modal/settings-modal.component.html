@@ -1,0 +1,31 @@
+<div class="modal-overlay" *ngIf="isVisible">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2>Configuraciones</h2>
+      <button class="close-btn" (click)="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label>Duración del Temporizador:</label>
+          <div class="time-inputs">
+            <div class="time-input-group">
+              <input type="number" id="minutes" name="minutes" [(ngModel)]="minutes" min="0" max="59" placeholder="25">
+              <label for="minutes">Minutos</label>
+            </div>
+            <span class="separator">:</span>
+            <div class="time-input-group">
+              <input type="number" id="seconds" name="seconds" [(ngModel)]="seconds" min="0" max="59" placeholder="00">
+              <label for="seconds">Segundos</label>
+            </div>
+          </div>
+          <div class="time-preview">Total: {{ formatTime(minutes * 60 + seconds) }}</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="cancel-btn" (click)="closeModal()">Cancelar</button>
+          <button type="submit" class="submit-btn">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
